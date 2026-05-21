@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fff3b0, #d8b4fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 35px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 70px;
+}
+
+h1 {
+  color: #7e22ce;
+  font-size: 55px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+.ticket-btn,
+.card button,
+#codeBtn {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  border-radius: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.ticket-btn {
+  background: linear-gradient(to bottom, #fb923c, #f97316);
+}
+
+.card {
+  margin-top: 25px;
+  background: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.card h2 {
+  color: #7e22ce;
+}
+
+input {
+  width: 90%;
+  padding: 14px;
+  border-radius: 20px;
+  border: 3px solid #c084fc;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card button {
+  background: linear-gradient(to right, #9333ea, #7e22ce);
+}
+
+#codeBtn {
+  background: linear-gradient(to right, #fb923c, #facc15);
+}
+
+#codeBox {
+  margin-top: 20px;
+  background: #f3e8ff;
+  color: #7e22ce;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 20px;
+  letter-spacing: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.success-icon {
+  font-size: 70px;
+}
+
+.mj {
+  font-size: 70px;
+  margin: 10px 0;
+}
+
+.admin-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.lock-screen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
