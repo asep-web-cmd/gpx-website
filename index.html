@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPX Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="lockScreen" class="lock-screen hidden">
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h1>Website Locked</h1>
+      <p>Kamu sudah membuat ticket rank.<br>Website akan terbuka kembali hari Minggu.</p>
+    </div>
+  </div>
+
+  <div class="container" id="mainContainer">
+
+    <button class="admin-btn" onclick="openAdmin()">🔑</button>
+
+    <div class="logo">🏆</div>
+    <h1>GPX</h1>
+    <p class="subtitle">Grove PhantomX</p>
+
+    <button class="ticket-btn" onclick="startTicket()">Ticket</button>
+
+    <div id="step1" class="card hidden">
+      <h2>Nama Roblox kamu?</h2>
+      <input type="text" id="username" placeholder="Masukkan username Roblox">
+      <button onclick="nextStep(2)">Submit</button>
+    </div>
+
+    <div id="step2" class="card hidden">
+      <h2>Email kamu?</h2>
+      <input type="text" id="email" placeholder="Masukkan email bebas">
+      <button onclick="nextStep(3)">Submit</button>
+    </div>
+
+    <div id="step3" class="card hidden">
+      <h2>Code Verifikasi</h2>
+      <p>Klik tombol CODE dan tunggu 20 detik</p>
+
+      <button id="codeBtn" onclick="generateCode()">CODE</button>
+
+      <div id="codeBox">• • • • •</div>
+
+      <input type="text" id="verifyCode" placeholder="Masukkan code 5 digit">
+
+      <button onclick="verifyCode()">Verify</button>
+    </div>
+
+    <div id="success" class="card hidden">
+      <div class="success-icon">✅</div>
+      <div class="mj">🕺</div>
+      <h2>Verifikasi Berhasil!</h2>
+      <p>Verifikasi anda berhasil untuk membuat ticket rank</p>
+      <button onclick="location.reload()">Kembali</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
